@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mon tchat</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="users"></div>
+<div id="messages"></div>
+<div id="lightFormConnexion">
+    <form action="#" method="post" id="formConnexion">
+        <input type="text" name="username" placeholder="Votre username" required>
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="submit">
+    </form>
+</div>
+<div id="divFormMessage">
+    <form action="#" method="post" id="formMessage">
+        <input type="text" name="message" placeholder="Message">
+        <input type="submit">
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1337/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="js/client.js"></script>
+</html>
